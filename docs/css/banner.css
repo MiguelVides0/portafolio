@@ -1,0 +1,81 @@
+.banner{
+    padding: 30px 0;
+    background: #eaaa1e;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__contenido{
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    width: 1025px;
+    font-family: 'Cabin', sans-serif;
+}
+.banner__saludo{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.banner__imagen{
+    width: 25%;
+    border-radius: 100%;
+}
+
+.banner__info{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.banner__media{
+    display: flex;
+    justify-content: space-around;
+}
+.media__dato:hover{
+    transition: all 1s ease;
+    color: #ffffff !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .banner__contenido{
+        padding: 2rem 1rem;
+    }
+    .banner__saludo{
+        font-size: 28px;
+    }
+    .banner__imagen{
+        width: 20%;
+    }
+    .banner__info{
+        font-size: 20px;
+    }
+    .banner__media{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .banner__contenido{
+        padding: 2rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .banner__saludo{
+        font-size: 20px;
+    }
+
+    .banner__textos{
+        order: 2;
+        padding-top: 15px;
+    }
+    .banner__imagen{
+        order: 1;
+        width: 35%;
+    }
+    .banner__info{
+        font-size: 15px;
+    }
+    .banner__media{
+        font-size: 15px;
+    }
+}

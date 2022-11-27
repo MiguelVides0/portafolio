@@ -1,0 +1,141 @@
+.contacto{
+    display: flex;
+    justify-content: center;
+    padding: 45px 0;
+    background: #e9b225;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+.contacto__contenido{
+    text-align: center;
+    width: 1025px;
+}
+
+.contacto__titulo{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contacto__container{
+    display: flex;
+}
+
+.contacto img{
+    width: 50%;
+}
+
+.contacto__formulario{
+    margin-left: 15px;
+    text-align: left;
+}
+
+.contacto__texto{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.form{
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.input{
+    height: 3.25rem;
+    width: 100%;
+    background: #e5b640;
+    border: none;
+    outline: 0px;
+}
+
+
+.textarea {
+    box-sizing: border-box;
+    background: #e5b640;
+    padding: 0.5rem;
+    border-radius: 7px;
+    width: 100%;
+    min-height: 3rem;
+}
+
+.form__pregunta{
+    font-size: 18px;
+    padding: 15px 0 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+#mensaje{
+    resize: none;
+}
+
+.input-enviar{
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    background: #bd8a07;
+    color:  #fff !important;
+    border: none;
+    transition: all 1s ease;
+}
+
+.input-enviar:hover{
+    background: #ce9a4b;
+    color: rgb(0, 0, 0) !important;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .contacto__contenido{
+        text-align: left;
+        padding: 2rem 1rem;
+    }
+    .contacto img{
+        display: none;
+    }
+    .form{
+        width: 100%;
+    }
+    .contacto__titulo{
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .contacto__titulo{
+        font-size: 28px;
+    }
+    .contacto__texto{
+        font-size: 18px;
+    }
+
+    .form__pregunta{
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+    .contacto__contenido{
+        text-align: left;
+        padding: 2rem 1rem;
+    }
+    .contacto img{
+        display: none;
+    }
+    .form{
+        width: 100%;
+    }
+    .contacto__titulo{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .contacto__titulo{
+        font-size: 20px;
+    }
+    .contacto__texto{
+        font-size: 15px;
+    }
+
+    .form__pregunta{
+        font-size: 15px;
+    }
+}
